@@ -14,9 +14,9 @@ Drop-in compatible with many Matlab scripts
 
 # Objectives
 
-Enable portability
-Facilitate access for all users
-Reduce risks of incompatibility of packages 
+* Enable portability
+* Facilitate access for all users
+* Reduce risks of incompatibility of packages 
 
 # Getting Started
 
@@ -25,35 +25,34 @@ See deployment for notes on how to deploy the project on a live system.
 
 ## Prerequisites
 
-docker
-xhost
+docker and xhost
 
 ```
 If like ubuntu:
 apt-get install docker xhost
 ```
 ## How to use this image
-
-It's enable xhost:
-sudo /usr/bin/xhost -
+```
+Enable xhost: sudo /usr/bin/xhost -
 
 Create directories to save your files:
 mkdir $HOME/octave
 chmod 775 -R $HOME/octave
-
+```
+```
 To start container (linux):
 docker run -ti --rm -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/octave:/$HOME/octave/ -w $HOME/octave --name oct tiusjc/octave
-
+```
 # Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-For the versions available, see the [tags on this repository](https://https://github.com/tiusjc/octave). 
+For the versions available, see the (https://https://github.com/tiusjc/octave). 
 
 ## Authors
 
-* **Nunes Thiago** 
-* **Walfran""  [https://github.com/walfrn]
+* **Nunes Thiago** [https://github.com/nunesthiago]
+* **Walfran** [https://github.com/walfrn]
 
