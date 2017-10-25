@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER tiusjc@gmail
+MAINTAINER DTI UNIFESP SJC
 RUN apt-get update && apt-get upgrade -y && apt-get install -y sudo xvfb x11vnc fluxbox supervisor
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/octave && \    
