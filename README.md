@@ -34,7 +34,8 @@ apt-get install docker xhost
 ## How to use this image
 ```
 Enable xhost: sudo /usr/bin/xhost -
-
+```
+```
 Create directories to save your files:
 mkdir $HOME/octave
 chmod 775 -R $HOME/octave
